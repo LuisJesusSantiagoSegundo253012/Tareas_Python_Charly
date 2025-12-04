@@ -474,3 +474,5 @@ Variables Booleanas en Python 🐍🟢🔴
 - Curso Python Desde Cero Gratis [Vídeo]. 
 YouTube. https://www.youtube.com/watch?v=VJadt5X0uzE
 """
+# Repositorio
+# git@github.com:LuisJesusSantiagoSegundo253012/Tareas_Python_Charly.git
