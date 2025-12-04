@@ -390,3 +390,6 @@ References:
 4) Curso de python para principiantes - https://www.youtube.com/watch?v=chPhlsHoEPo&t=775s
 5) El tutorial de Python - https://docs.python.org/es/3/tutorial/
 """
+
+# Repositorio
+# git@github.com:LuisJesusSantiagoSegundo253012/Tareas_Python_Charly.git
