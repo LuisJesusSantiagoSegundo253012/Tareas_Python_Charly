@@ -141,7 +141,7 @@ else:
 
 # Casos de prueba
 # Normal: score = 95 → Category: A
-# Borde: score = 60 → Category: D
+# Borde: score = 15 → Category: F
 # Error: score = 120 → Error: invalid input
 
 print("\n Problema 3: List statistics function")
@@ -343,6 +343,54 @@ print("Greeting:", greeting_message)  # Mostrar saludo final
 print("\n Problema 6: Factorial function")
 # Problema 6.- Factorial function (iterative or recursive)
 
+"""
+Descripción:
+El programa calcula el factorial de un número entero utilizando la función factorial().
+Primero valida que el usuario ingrese un número entero válido y que este se encuentre
+en el rango permitido (0 a 20). Luego llama a la función para obtener el factorial y
+muestra el resultado final.
+
+Entradas:
+- n_text (texto con el número ingresado por el usuario)
+
+Salidas:
+- "n: <valor>"
+- "Factorial: <resultado>"
+
+Validaciones:
+- El valor debe convertirse correctamente a entero.
+- Debe estar en el rango 0 a 20.
+"""
+
+# Función que calcula el factorial de un número
+def factorial(n):
+    result = 1  # Acumulador del factorial
+    for i in range(1, n + 1):  # Recorrer desde 1 hasta n
+        result = result * i  # Multiplicar acumulador por i
+    return result  # Regresar factorial final
+
+n_text = input("Enter n: ")  # Solicitar número al usuario
+
+try:
+    n = int(n_text)  # Convertir a entero
+except:
+    print("Error: invalid input")
+    exit()
+
+if n < 0 or n > 20:  # Validar rango
+    print("Error: invalid input")
+    exit()
+
+fact_value = factorial(n)  # Calcular factorial
+
+print("n:", n)  # Mostrar valor original
+print("Factorial:", fact_value)  # Mostrar resultado
+
+# Casos de prueba
+# Normal: n="5" → Factorial = 120
+# Borde: n="0" → Factorial = 1
+# Error: n="-3" → Error: invalid input
+# Error: n="25" → Error: invalid input
 
 
 ## Conclusion
